@@ -52,7 +52,7 @@
       </a-gltf-model>-->
 
 
-     <a-gltf-model
+ <!--    <a-gltf-model
   id="catAugmentation"
   src="#anchoredModel"
   position="0 0 0.08"
@@ -77,7 +77,73 @@
     </a-text>
 
 
-    </a-entity>
+    </a-entity>  -->
+
+      <!-- <a-entity id="catTarget" mindar-image-target="targetIndex: 0">
+    
+   <a-entity
+      id="gestureContainer"
+      class="clickable"
+      gesture-handler="minScale: 0.05; maxScale: 1.5;"
+    >
+      
+      <a-gltf-model
+        id="catAugmentation"
+        src="#anchoredModel"
+        position="0 0 0.08"
+        rotation="0 0 0"
+        scale="0.25 0.25 0.25"
+        animation-mixer
+        animation__float="
+          property: position;
+          from: 0 0 0.08;
+          to: 0 0.04 0.12;
+          dur: 1800;
+          dir: alternate;
+          easing: easeInOutSine;
+          loop: true">
+      </a-gltf-model>
+      <a-text
+  id="catDescription"
+  value="Happy Cat\nThis is a 3D digital representation of the our cat Happy."
+  position="0 -0.4 0.1" 
+  rotation="0 0 0"
+  scale="0.4 0.4 0.4"
+  color="#FFFFFF"
+  align="center"
+  font="kelsonsans"
+  width="2">
+</a-text>
+
+    </a-entity> -->
+
+    <a-entity id="catTarget" mindar-image-target="targetIndex: 0">
+  
+  <a-entity 
+    id="gestureContainer" 
+    gesture-handler="minScale: 0.05; maxScale: 2.0;">
+    
+    <a-gltf-model
+      id="catAugmentation"
+      src="#anchoredModel"
+      position="0 0 0.08"
+      rotation="0 0 0"
+      scale="0.25 0.25 0.25"
+      animation-mixer>
+    </a-gltf-model>
+
+    <a-text
+      id="catDescription"
+      value="Happy Cat"
+      position="0 -0.4 0.1" 
+      align="center"
+      width="2">
+    </a-text>
+
+  </a-entity>
+
+</a-entity>
+
 
   </a-scene>
 
